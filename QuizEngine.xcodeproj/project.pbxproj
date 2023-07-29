@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FFDAB8A2A756E3A00DD69C7 /* QuizEngine.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDAB892A756E3A00DD69C7 /* QuizEngine.docc */; };
 		5FFDAB902A756E3A00DD69C7 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFDAB852A756E3A00DD69C7 /* QuizEngine.framework */; };
-		5FFDAB952A756E3A00DD69C7 /* QuizEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDAB942A756E3A00DD69C7 /* QuizEngineTests.swift */; };
-		5FFDAB962A756E3A00DD69C7 /* QuizEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FFDAB882A756E3A00DD69C7 /* QuizEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FFDABA02A756EFF00DD69C7 /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDAB9F2A756EFF00DD69C7 /* FlowTest.swift */; };
+		5FFDABA22A75704400DD69C7 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDABA12A75704400DD69C7 /* Flow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +24,9 @@
 
 /* Begin PBXFileReference section */
 		5FFDAB852A756E3A00DD69C7 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FFDAB882A756E3A00DD69C7 /* QuizEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizEngine.h; sourceTree = "<group>"; };
-		5FFDAB892A756E3A00DD69C7 /* QuizEngine.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = QuizEngine.docc; sourceTree = "<group>"; };
 		5FFDAB8F2A756E3A00DD69C7 /* QuizEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FFDAB942A756E3A00DD69C7 /* QuizEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEngineTests.swift; sourceTree = "<group>"; };
+		5FFDAB9F2A756EFF00DD69C7 /* FlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTest.swift; sourceTree = "<group>"; };
+		5FFDABA12A75704400DD69C7 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +69,7 @@
 		5FFDAB872A756E3A00DD69C7 /* QuizEngine */ = {
 			isa = PBXGroup;
 			children = (
-				5FFDAB882A756E3A00DD69C7 /* QuizEngine.h */,
-				5FFDAB892A756E3A00DD69C7 /* QuizEngine.docc */,
+				5FFDABA12A75704400DD69C7 /* Flow.swift */,
 			);
 			path = QuizEngine;
 			sourceTree = "<group>";
@@ -80,7 +77,7 @@
 		5FFDAB932A756E3A00DD69C7 /* QuizEngineTests */ = {
 			isa = PBXGroup;
 			children = (
-				5FFDAB942A756E3A00DD69C7 /* QuizEngineTests.swift */,
+				5FFDAB9F2A756EFF00DD69C7 /* FlowTest.swift */,
 			);
 			path = QuizEngineTests;
 			sourceTree = "<group>";
@@ -92,7 +89,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FFDAB962A756E3A00DD69C7 /* QuizEngine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,9 +143,11 @@
 				TargetAttributes = {
 					5FFDAB842A756E3A00DD69C7 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					5FFDAB8E2A756E3A00DD69C7 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -194,7 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FFDAB8A2A756E3A00DD69C7 /* QuizEngine.docc in Sources */,
+				5FFDABA22A75704400DD69C7 /* Flow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FFDAB952A756E3A00DD69C7 /* QuizEngineTests.swift in Sources */,
+				5FFDABA02A756EFF00DD69C7 /* FlowTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +333,7 @@
 		5FFDAB9A2A756E3A00DD69C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -346,7 +345,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -365,6 +364,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,6 +373,7 @@
 		5FFDAB9B2A756E3A00DD69C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -384,7 +385,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -411,6 +412,8 @@
 		5FFDAB9D2A756E3A00DD69C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U7K3Q5MXC2;
@@ -423,6 +426,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -431,6 +435,8 @@
 		5FFDAB9E2A756E3A00DD69C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U7K3Q5MXC2;
